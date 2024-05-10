@@ -109,6 +109,7 @@ def list_cases_dict(user_id):
         Cases.open_date.label('case_open_date'),
         Cases.close_date.label('case_close_date'),
         Cases.soc_id.label('case_soc_id'),
+        Cases.custom_attributes,
         Cases.user_id.label('opened_by_user_id'),
         user_alias.user.label('opened_by'),
         Cases.owner_id,

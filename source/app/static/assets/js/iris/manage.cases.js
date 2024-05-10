@@ -96,7 +96,7 @@ $('#cases_table').dataTable({
               }
         },
         {
-            "data": "case_soc_id",
+            "data": "custom_attributes.Fraud Money.Collected Amount.value",
             "render": function (data, type, row, meta) {
                 if (type === 'display') {
                     let span_anchor = $('<span>');
@@ -107,7 +107,7 @@ $('#cases_table').dataTable({
               }
         },
         {
-            "data": "opened_by",
+            "data": "custom_attributes.Fraud Money.Submitted Amount.value",
             "render": function (data, type, row, meta) {
             if (type === 'display') { data = sanitizeHTML(data);}
             return data;
